@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/your-adobe-font-id.css">
+    <title>Profil Mahasiswa</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="kocak.png" alt="">
+            <h3>Profil Mahasiswa</h3>
+        </div>
+    </header>
+
+    <div class="menu">
+        <nav>
+            <div class="nav-menu">
+                <a href="#biodata" onclick="biodata();">Biodata</a>
+                <a href="#pendidikan" onclick="pendidikan();">Pendidikan</a>
+                <a href="#pengalaman" onclick="pengalaman();">Pengalaman</a>
+                <a href="#keahlian" onclick="keahlian();">Keahlian</a>
+                <a href="#publikasi" onclick="publikasi();">Publikasi</a>
+            </div>
+        </nav>
+
+        <section>
+            <div id="wadah" class="wadah">
+                <h1>Hello There,<br>Welcome to Evan's personalized website</span>
+                </h1>
+            </div>
+        </section>
+
+        <aside>
+            <h1>Hobi</h1>
+            <ul>
+                <li>Futsal</li>
+                <li>Badminton</li>
+                <li>Games</li>
+            </ul>
+            <!-- <table>
+                <tr>
+                    <th>Hobi</th>
+                </tr>
+                <tr>
+                    <td>Futsal</td>
+                    <td>Futsal</td>
+                    <td>Futsal</td>
+                </tr>
+            </table> -->
+        </aside>
+    </div>
+        
+    
+
+    <footer>
+        <div class="footer">
+            <div class="social">
+                <a href="https://www.instagram.com/evan.alf/"><i data-feather="instagram"></i></a>
+                <a href="https://www.X.com/iykwimrn/"><i data-feather="twitter"></i></a>
+                <a href="https://www.facebook.com/evan_fb/"><i data-feather="facebook"></i></a>
+            </div>
+            <div class="cp">
+                <p>&copy; Copyright 2024. All rights reserved.</p>
+            </div>
+            <div class="nama">
+                <h3>Profil Evan</h3>
+                <p>Get To Know Me!</p>
+            </div>
+        </div>
+        
+        
+        
+        
+    </footer>
+
+    <script>
+        let biodata=()=> {
+            document.querySelector("#wadah").innerHTML=`
+            <div class="card">
+                <h3>Biodata</h3>
+                    <table>
+                        <tr>
+                            <td>Nim : </td><td>2023081019</td>
+                        </tr>
+                        <tr>
+                            <td>Nama : </td><td>Evan Alfiansyah</td>
+                        </tr>
+                        <tr>
+                            <td>Tgl Lahir : </td><td>13 Maret 2004</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Lahir : </td><td>Tangerang Selatan</td>
+                        </tr>
+                    </table>
+            </div>
+            `;
+
+        }
+
+        let pendidikan=()=> {
+            document.querySelector("#wadah").innerHTML=`
+            <div class="card">
+                <h3>Pendidikan</h3>
+                    <table>
+                        <tr>
+                            <td>MTsN 1 Pamulang</td><td>2016-2019</td>
+                        </tr>
+                        <tr>
+                            <td>SMAN 3 Tangerang Selatan</td><td>2019-2022</td>
+                        </tr>
+                        <tr>
+                            <td>Universitas Pembangunan Jaya</td><td>2023-</td>
+                        </tr>
+                    </table>
+            </div>
+            `;
+
+        }
+        let pengalaman=()=> {
+            document.querySelector("#wadah").innerHTML=`
+            <div class="card">
+                <h3>Pengalaman</h3>
+                    <table>
+                        <tr>
+                            <td>Karang Taruna</td><td>2019-2020</td>
+                        </tr>
+                        <tr>
+                            <td>Himpunan Mahasiswa</td><td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>-</td><td>-</td>
+                        </tr>
+                    </table>
+            </div>
+            `;
+
+        }
+        let keahlian=()=> {
+            document.querySelector("#wadah").innerHTML=`
+            <div class="card">
+                <h3>Keahlian</h3>
+                    <table>
+                        <tr>
+                            <td>Web Design</td><td>HTML & CSS</td>
+                        </tr>
+                        <tr>
+                            <td>Video Editing</td><td>Capcut</td>
+                        </tr>
+                        <tr>
+                            <td>UI/UX Design</td><td>Figma</td>
+                        </tr>
+                    </table>
+            </div>
+            `;
+
+        }
+        let publikasi=()=> {
+            document.querySelector("#wadah").innerHTML=`
+            <div class="card">
+                <h3>Publikasi</h3>
+                    <table>
+                        <tr>
+                            <td>Evan_Publikasi</td><td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>-</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td><td>-</td>
+                        </tr>
+                    </table>
+            </div>
+            `;
+
+        }
+
+    </script>
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>

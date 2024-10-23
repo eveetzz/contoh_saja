@@ -1,0 +1,730 @@
+*{
+    text-decoration: none;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    /* font-family: 'Sequel Sans', sans-serif; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+div{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+/* header start */
+header{
+    top: 0;
+    width: 100%;
+    height: 17vh;
+    margin-bottom: 1vh;
+    background-color: pink;
+    display: flex;
+    background-image: url(wdaw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    box-shadow: 2px 2px 4px 3px rgba(102, 97, 97, 0.5);
+    
+}
+
+header img{
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 4px rgba(102, 97, 97, 0.5);
+} 
+
+.header{
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+/* header end */
+
+/* nav start */
+nav{
+    width: 25%;
+    height: 65vh;
+    
+    /* background-color: lightslategrey; */
+}
+
+.nav-menu{
+    padding: 6rem 3.5rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+nav a{
+    display: block;
+    color: #6B7280;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+nav a:hover {
+    color: #1C1917;
+    text-shadow: 2px 2px 4px rgba(102, 97, 97, 0.5);
+}
+
+/* nav a{
+    text-align: left;
+    display: block;
+    padding: 1.5rem 2rem 0;
+    margin: 1.1rem 1.7rem 0;
+    font-size: 20px;
+    color: lightgray;
+    font-weight: 600;
+} */
+/* nav end */
+
+/* section start */
+section{
+    width: 50%;
+    height: 65vh;
+    /* float: left; */
+    padding: 2rem 2rem;
+    /* background-color: lightblue; */
+}
+
+.wadah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem;
+
+}
+
+.wadah h1{
+    padding: 3rem;
+    font-weight: 600;
+    
+}
+
+/* .card:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -1px -10px -10px white;
+} */
+
+.card {
+    /* background-color: lightgrey; */
+    width: 40vw;
+    height: 50vh;
+    padding: 1rem;
+    /* border-radius: 20px; */
+    box-shadow: 2px 2px 4px 3px rgba(102, 97, 97, 0.5);
+    display: inline-block;
+}
+
+.card h3{
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+    
+}
+
+.card table{
+    /* border: 1px solid black; */
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem;
+}
+
+.card td{
+    padding: 1rem;
+    border-bottom: 2px solid rgb(177, 177, 177);
+}
+
+/* section end */
+
+/* aside start */
+aside{
+    width: 25%;
+    height: 65vh;
+    /* float: left; */
+    padding: 6rem 3.5rem;
+    background-color: #171717;
+    color: #FFF200;
+    box-shadow: 4px 2px 4px rgba(102, 97, 97, 0.5);
+    /* box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.1)inset; */
+}
+
+aside h1{
+    text-align: center;
+}
+
+aside ul{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+aside li{
+    margin-bottom: 1rem;
+}
+
+/* aside table{
+    width: 100%;
+    padding: rem;
+}
+
+aside th{
+    font-size: 23px;
+    padding: 0 0 1rem 0;
+    text-align: center;
+}
+
+aside td{
+    padding: 0.8rem;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+} */
+/* aside end */
+
+/* footer start */
+
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    /* background-color: lightseagreen; */
+    color: #6B7280;
+    margin-top: 5px;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #6B7280;
+}
+
+.footer{
+    justify-content: space-between;
+    
+}
+
+.nama h3{
+    font-size: 1.2rem;
+    color: #1C1917;
+}
+
+.cp p{
+    padding: 0.8rem;
+}
+
+.nama{
+    display: block;
+    margin: 0 4rem 0 0;
+    
+}
+
+.nama p{
+    margin-top: -1rem;
+}
+
+.social{   
+    padding: 1.7rem;
+}
+
+.social a{
+    color: #6B7280;
+    padding: 0 0.5rem;
+    
+}
+
+
+/* footer end */
+
+#head{
+    text-align: center;
+    font-size: 23px;
+}
+
+/* media query */
+
+/* Tablet landscape */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    html{
+        font-size: 14px;
+    
+    }
+
+    
+
+    header{
+        height: fit-content;
+    }
+
+    .header{
+        padding: 1rem;
+    }
+
+    header img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+    } 
+
+    header h3{
+        font-size: 0.9rem;
+    }
+
+    .menu{
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    nav{
+        width: 25%;
+        height: 50vh;
+        display: flex;            
+        justify-content: start; 
+    }
+
+    
+    .nav-menu{
+        padding: 3rem 2.5rem;
+        display: flex;            
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav a{
+        font-size: 0.9rem;
+    }
+
+    section{
+        /* width: 75%; */
+        flex-grow: 1;
+        height: 50vh;
+        display: flex;
+        /* padding: 4rem 1rem; */
+        padding: 1rem 6rem;
+    }
+
+    .wadah{
+        flex-direction: column;
+        justify-content: start;
+        display: flex;
+        /* padding: 1rem 0.5rem; */
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    .wadah h1{
+        padding: 5rem 3rem;
+    }
+
+    .card {
+        /* background-color: lightgrey; */
+        width: 50vw;
+        height: 45vh;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px 3px rgba(102, 97, 97, 0.5);
+        display: inline-block;
+    }
+    
+    .card h3{
+        text-align: center;
+        margin: 0 0 10px;
+        font-size: 1.4rem;
+        
+    }
+    
+    .card table{
+        /* border: 1px solid black; */
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.8rem;
+    }
+    
+    .card td{
+        padding: 1rem;
+        border-bottom: 2px solid rgb(177, 177, 177);
+    }
+
+    aside{
+        width: 100%;
+        height: fit-content;
+        padding: 2rem 3.5rem;
+        
+    }
+
+    aside th{
+        font-size: 1.2rem;
+    }
+
+    aside td{
+        display: initial;
+        margin: 7rem;
+        padding: 1rem;
+    }
+
+    footer{
+        height: fit-content;          
+        font-size: 10px;
+        padding: 1rem;
+    }
+
+
+
+
+
+    /* .cp p, .nama h3, .nama p {
+        margin: 0 ;  
+        
+    } */
+
+    .nama h3{
+        font-size: 1rem;
+    }
+
+    .nama p{
+        font-size: 0.7rem;
+    }
+/* 
+    .social,.cp,.nama{
+        padding: 0;
+        margin: 0;
+    } */
+
+    .social {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        /* gap: 1rem; */
+        padding: 10px 0 0 0;               
+    }
+}
+
+/* Tablet portrait */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+
+    header{
+        height: fit-content;
+    }
+
+    .header{
+        padding: 1rem;
+    }
+
+    header img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+    } 
+
+    header h3{
+        font-size: 0.9rem;
+    }
+
+    .menu{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    nav{
+        width: 100%;
+        height: fit-content;
+        display: flex;            
+        justify-content: center; 
+    }
+
+    
+    .nav-menu{
+        padding: 1rem;
+        display: flex;            
+        justify-content: center; 
+        flex-direction: row;
+        gap: 0.8rem;
+    }
+
+    nav a{
+        text-align: center;
+        display: inline-flex;
+        font-size: 0.9rem;
+    }
+
+    section{
+        width: 100%;
+        height: fit-content;
+        
+        /* padding: 4rem 1rem; */
+    }
+
+    .wadah{
+        flex-direction: column;
+        justify-content: start;
+        display: flex;
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        /* background-color: lightgrey; */
+        width: 80vw;
+        height: 45vh;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px 3px rgba(102, 97, 97, 0.5);
+        display: inline-block;
+    }
+    
+    .card h3{
+        text-align: center;
+        margin: 0 0 10px;
+        font-size: 1.4rem;
+        
+    }
+    
+    .card table{
+        /* border: 1px solid black; */
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.8rem;
+    }
+    
+    .card td{
+        padding: 1rem;
+        border-bottom: 2px solid rgb(177, 177, 177);
+    }
+
+    aside{
+        width: 100%;
+        height: fit-content;
+        padding: 2rem 3.5rem;
+        
+    }
+
+    aside ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer{
+        height: fit-content;
+        display: flex;            
+        justify-content: center; 
+        font-size: 10px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 0.5rem; */
+        text-align: center;
+        margin: 0;
+        padding: 0.7rem;
+    }
+
+
+
+    .cp p, .nama h3, .nama p {
+        margin: 0 ;  
+        /* padding: 0;       */
+    }
+
+    .nama h3{
+        font-size: 1rem;
+    }
+
+    .nama p{
+        font-size: 0.7rem;
+    }
+
+    .social,.cp,.nama{
+        padding: 0;
+        margin: 0;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        gap: 1rem;
+        padding: 10px 0 0 0;               
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 14px;
+    }
+
+    header{
+        height: fit-content;
+    }
+
+    .header{
+        padding: 1rem;
+    }
+
+    header img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+    } 
+
+    header h3{
+        font-size: 0.9rem;
+    }
+
+    .menu{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    nav{
+        width: 100%;
+        height: fit-content;
+        display: flex;            
+        justify-content: start; 
+    }
+
+    
+    .nav-menu{
+        padding: 1rem;
+        display: flex;            
+        justify-content: center; 
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav a{
+        text-align: center;
+        display: inline-flex;
+        font-size: 0.9rem;
+    }
+
+    section{
+        width: 100%;
+        height: fit-content;
+        
+        /* padding: 4rem 1rem; */
+    }
+
+    .wadah{
+        flex-direction: column;
+        justify-content: start;
+        display: flex;
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        /* background-color: lightgrey; */
+        width: 80vw;
+        height: 45vh;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px 3px rgba(102, 97, 97, 0.5);
+        display: inline-block;
+    }
+    
+    .card h3{
+        text-align: center;
+        margin: 0 0 10px;
+        font-size: 1.4rem;
+        
+    }
+    
+    .card table{
+        /* border: 1px solid black; */
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.8rem;
+    }
+    
+    .card td{
+        padding: 1rem;
+        border-bottom: 2px solid rgb(177, 177, 177);
+    }
+
+    aside{
+        width: 100%;
+        height: fit-content;
+        padding: 2rem 3.5rem;
+        
+    }
+
+    aside th{
+        font-size: 1.2rem;
+    }
+
+    aside td{
+        display: flex;
+        padding: 0.8rem;
+    }
+
+    footer{
+        height: fit-content;
+        display: flex;            
+        justify-content: center; 
+        font-size: 10px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 0.5rem; */
+        text-align: center;
+        margin: 0;
+        padding: 0.7rem;
+    }
+
+
+
+    .cp p, .nama h3, .nama p {
+        margin: 0 ;  
+        /* padding: 0;       */
+    }
+
+    .nama h3{
+        font-size: 1rem;
+    }
+
+    .nama p{
+        font-size: 0.7rem;
+    }
+
+    .social,.cp,.nama{
+        padding: 0;
+        margin: 0;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        gap: 1rem;
+        padding: 10px 0 0 0;               
+    }
+
+}
+
+
+
+
+
+
+
